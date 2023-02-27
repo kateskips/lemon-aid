@@ -19,11 +19,15 @@ function App() {
   return (
     <Layout className="layout">
     <Header>
+      <h1 style={{ color: 'white', textAlign: 'center' }}>Lemon Aid</h1>
     </Header>
+    <Content className="content">
     <div className="App">
-      <header className="App-header">
-        </header>
+      <Card style={{margin: '0 auto'}}title="Random Advice Generator">
+          <Spin size="large" tip="Loading..." />
+      </Card>
     </div>
+    </Content>
   </Layout>
 }
 
