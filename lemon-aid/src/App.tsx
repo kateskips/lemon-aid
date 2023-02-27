@@ -9,6 +9,13 @@ function App() {
   const [advice, setAdvice] = useState<Advice | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
 
+  const getNewAdvice = async () => {
+    setLoading(true);
+    const newAdvice = await fetchAdvice();
+    setAdvice(newAdvice);
+    setLoading(false);
+  };
+
   return (
     <Layout className="layout">
     <Header>
