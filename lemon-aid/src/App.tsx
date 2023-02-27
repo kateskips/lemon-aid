@@ -33,10 +33,11 @@ function App() {
           </Button>
         )}
       </Card>
-    </div>
+      </div>
     </Content>
   </Layout>
   );
 }
 
-export default App
+export default App;
+
