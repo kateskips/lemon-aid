@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { Advice } from './Advice';
+import { fetchAdvice } from './AdviceApi';
 
 
 function App() {
