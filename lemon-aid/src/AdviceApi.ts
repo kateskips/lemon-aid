@@ -9,4 +9,6 @@ export const fetchAdvice = async (): Promise<Advice> => {
   const validatedResponse = adviceResponseSchema.parse(response.data);
   return validatedResponse.slip;
   console.log(validatedResponse);
+  console.log(response.data);
+  console.log(response);
 };
