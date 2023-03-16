@@ -12,5 +12,3 @@ export const adviceResponseSchema = z.object({
 });
 
 export type AdviceResponse = z.infer<typeof adviceResponseSchema>;
-
-//
